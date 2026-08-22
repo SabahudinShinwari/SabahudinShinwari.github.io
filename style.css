@@ -56,7 +56,7 @@ body {
 }
 
 .theme-toggle {
-    margin-left: auto;
+    order: 3;
     padding: 7px 9px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -70,12 +70,14 @@ body {
 
 .menu-toggle {
     display: none;
+    order: 4;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     gap: 30px;
+    order: 2;
 }
 
 .nav-links a {
@@ -745,6 +747,16 @@ body.light-theme .nav-links {
     .logo {
         font-size: 1rem;
         white-space: nowrap;
+        order: 1;
+    }
+
+    .theme-toggle {
+        margin-left: auto;
+        order: 2;
+    }
+
+    .menu-toggle {
+        order: 3;
     }
 
     .menu-toggle {
