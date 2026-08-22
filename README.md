@@ -40,7 +40,7 @@ README.md
 
 ## 👨‍💻 About
 
-I am a Computer Science undergraduate at Albukhary International
+I am a Computer Science student at Albukhary International
 University with interests in Full Stack Development, Artificial
 Intelligence, Machine Learning, Data Science, and modern web technologies.
 
