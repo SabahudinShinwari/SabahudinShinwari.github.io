@@ -559,3 +559,120 @@ section h2 {
     height: 280px;
     }
 }
+
+/* Certifications & Achievements */
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+}
+
+.achievement-card {
+    padding: 30px;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    background: rgba(30, 41, 59, 0.35);
+    transition: 0.3s;
+}
+
+.achievement-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+.achievement-icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.achievement-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.achievement-issuer {
+    color: #38bdf8;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.achievement-card > p:last-child {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 900px) {
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        flex: none;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-links {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+    section {
+        padding: 100px 5%;
+    }
+
+    #home h1 {
+        font-size: 3rem;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 350px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+}
